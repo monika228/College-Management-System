@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+table
+{
+	margin-left:2%;
+	background:#d9ffb3;
+	background-image:url("");
+}
+.counters1 {
+    background:#000066;
+	background-image:url("https://www.integraltech.com.au/wp-content/uploads/2015/04/abstract-waves-light-pink-wallpaper-wallwuzz-hd-wallpaper-9759-2.png");
+	background-size:100% 240%;
+    color: #fff;
+	margin-top:2%;
+    padding: 50px 20px;
+    border-top: 3px pink solid;
+}
+
+.counters1 .container1 {
+    display: grid;
+	font-size:33px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3px;
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+    .counters1 .container1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .counters1 .container1 > div:nth-of-type(1),
+    .counters1 .container1 > div:nth-of-type(2) {
+        border-bottom: 1px lightskyblue solid;
+        padding-bottom: 20px;
+    }
+}
+
+.card {
+  background:#ccb3ff;
+  border-radius: 2px;
+  background-image:url("https://wallpapercave.com/wp/wp4771753.png");
+  background-size:100% 100%;
+  display: inline-block;
+  height: 340px;
+  padding:5;
+  margin: 30;
+  color:#110033;
+  position: relative;
+  width: 340px;
+  font-size:22;
+}
+
+.card-1 {
+  box-shadow: 0 1px 3px #00004d, 0 1px 2px red;
+  transition: all 0.9s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(22,0,10,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#stutest
+{
+	background:white
+}
+
+
+
+</style>
+</head>
+<body>
+ <footer class="counters1" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container1" data-aos="fade-up" data-aos-duration="2000">
+		<div>                    
+            <font size="8" color="white"><div class="counter" data-target="60">0</div></font>
+            <font size="5" color="pink">Faculty</font>
+        </div>
+         <div>                   
+            <font size="8" color="white"><div class="counter" data-target="1500">0</div></font>
+            <font size="5" color="pink">Students</font>
+        </div>
+		<div>                    
+			<font size="8" color="white"><div class="counter" data-target="30">0</div></font>
+			<font size="5" color="pink">Years</font>
+		</div>
+		<div>                    
+			<font size="8" color="white"><div class="counter" data-target="6000">0</div></font>
+			<font size="5" color="pink">Followers</font>
+		</div>
+	</div>
+</footer>
+<footer data-aos="fade-up" data-aos-duration="2000">
+  <font size="10"><h4>About Us</h4></font>
+<table width="95%">
+<tr><br>
+	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td><font size="6" color="#330066"> <b>
+Good nature and good sense must ever join, <br>
+to err is humane and to develop is mine."<br></b>
+</font><font size="5">
+MYIT darted on the path of development and education in 2004 <br>
+under the aegis of "Sahyog Jankalyan Samiti", approved by <br>
+the All India Council of Technical Education, New Delhi <br>
+under Ministry of HRD, Govt. of India and stands affiliated <br>
+to Dr APJ Abdul Kalam Technical University, Lucknow. <br>
+Sprawling over 80 acres of land, on Kanpur-Agra-Delhi <br>
+National Highway (NH -2), Kanpur,the campus is an <br>
+excellent example of architectural marvel.<a href="about_us.php">read more...</a></font> </td>
+	<td><img src="images\colg\one.jpg" height="200" width="400"> <br><br>
+	<img src="images\activity\act3.jpg" height="200" width="400"> </td>
+</tr>
+	
+</table><br><br>
+
+</footer>
+
+<footer>
+<table style="background-color:#000033;">
+	<tr>
+		<td width="50%">
+			<font size="10"><h4>Courses</h4></font>
+		<td>
+		<td width="50%">
+			<font size="10"><h4>Message from Principal</h4></font>
+		<td>
+	</tr>
+</table>
+  <?php
+			 include 'test.php';
+	 ?>
+	 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</footer>
+
+
+
+<footer data-aos="fade-up" data-aos-duration="2000">
+<font size="10"><h4>Student's Testimonial</h4></font>
+<div id="stutest" data-aos="fade-up" data-aos-duration="2000">
+			<div class="card card-1">
+			<img src="images\student\2.jpg" height="100" width="100">
+			<br><b>Aakash Sharma</b><br>
+			MYIT has been a great contributor to the development of my personality. I have established my leadership, time management and team skills and have also been able to advance these skills to the whole new <a href="">more</a>
+		</div>
+		<div class="card card-1 hover1">
+		<img src="images\student\1.jpg" height="100" width="100">
+			<br><b>Harshita Sachdeva</b><br>			
+			My bachelor degree at Sharda in computer science consisted of many projects based evaluation and faculty connect. The mentors at MYIT helped us enhance my academic and interpersonal skills.  <a href="">more</a></div>
+		<div class="card card-1  hover1">
+		<img src="images\student\19.jpg" height="100" width="100">
+			<br><b>Sanchit Bhatnagar</b><br>
+			“Think Different, that is one thing that Sharda University urges in and to far extent succeed in teaching to its students which invariably helps to achieve what you need. It nourished me and thus  <a href="">more</a></div>
+
+</div>
+</footer>
+<footer data-aos="fade-up" data-aos-duration="2000">
+<font size="10"><h4>Press Release</h4></font>
+<div id="stutest" data-aos="fade-up" data-aos-duration="2000">
+<table width="98">
+<tr>
+		<td><br><img src="images\colg\papera.gif" height="300" width="600"></td>
+		<td>&nbsp;&nbsp;&nbsp;</td>
+		<td><img src="images\colg\paperb.gif" height="300" width="600"><br></td>
+</tr>
+<table>
+</div>
+</footer>
+		
+
+<script>
+const counters = document.querySelectorAll('.counter');
+const speed = 120;
+
+counters.forEach(counter => {
+    const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+
+        const inc = target / speed;
+        if (count < target) {
+    
+            counter.innerText = count + inc;
+   
+            setTimeout(updateCount, 1);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCount();
+});
+</script>
+</body>
+</html> 
