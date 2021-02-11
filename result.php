@@ -1,39 +1,67 @@
 <html>
     <head>
 	<title>Add Result</title>
-	<link href="css/style.css" rel="stylesheet">
 	<style>
 	
 
-#data
+ #data
 {
-	font-size:103%;
-	width:50%;
-	color:blue;
-	background:white;
-	float:left;
-	padding:2%;
-	margin-left:20%;
-	margin-top:2%;
-	box-shadow:2px 5px 28px blue;
-	border-radius:33 11px 33 11px;
-	opacity:0.9;
+		font-size:103%;
+		width:50%;
+		color:blue;
+		background:white;
+		float:left;
+		padding:2%;
+		margin-left:20%;
+		margin-top:2%;
+		box-shadow:2px 5px 28px blue;
+		border-radius:33 11px 33 11px;
+		opacity:0.9;
 }
+#text
+     {  width:50%;
+		height:9%;
+        color:blue;
+		font-color:green; 
+		font-size:24;
+		float:right;
+		margin-right:60;
+		BORDER:2px solid blue;
+	}
+
+	
+#submit
+	{
+		width:170;
+		height:50;
+		color:green;
+		BORDER:2px solid green;
+		font-size:22;
+		margin-left:100;
+		}
+#submit:hover
+	{
+		color:green;
+		BORDER:2px solid blue;
+		font-size:26;
+		}
+
 </style>
 <body background="images/background.jpg">
 						<?php
 						session_start();
-						?>
+						 //include 'header.php';
+						 ?>
 
 
 <div id="data">
+<FORM ACTION="saveresult.php" METHOD="POST">
 <table>
 <tr>
-<FORM ACTION="saveresult.php" METHOD="POST">
-<th colspan="5">
+<th colspan="2">
 <br><br>
 Roll No:-&nbsp;&nbsp;<input type id="text" name="roll" autocomplete="off" required="required"><br><br><br>
-</th colspan="2">
+</th>
 </tr>
 <tr>
 <td>
@@ -46,11 +74,6 @@ Practical 1:-<input type id="text" name="m6" autocomplete="off" required="requir
 Practical 2:-<input type id="text" name="m7" autocomplete="off" required="required"><br><br>
 </td>
 <td>
-<td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</td>
-</td>
-<td colspan="2">
 Internal 1:-<input type id="text" name="p1" autocomplete="off" required="required"><br><br>
 Internal 2:-<input type id="text" name="p2" autocomplete="off" required="required"><br><br>
 Internal 3:-<input type id="text" name="p3" autocomplete="off" required="required"><br><br>
@@ -61,18 +84,12 @@ Internal 7:-<input type id="text" name="p7" autocomplete="off" required="require
 </th>
 </tr>
 <tr>
-
-<td colspan="3">
-<button class="button b3" >Add</button></form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td colspan="2">
-<a href ="home.php"><input type="button" class="button b2" value="Home"></a>
-</td>
+<td colspan="2"><br><br>
+<button type id="submit" name="submit" >Add</button></form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button type id="submit"><a href ="home.php">Home</a></button>
+</th>
 </tr>
 </table>
-
-
-
-
-
 </div>
 </body>
 </html>
